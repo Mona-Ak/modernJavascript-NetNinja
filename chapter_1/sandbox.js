@@ -8,29 +8,43 @@
 
 // ___________________________________________________
 // strings
-console.log('hello, world');
+// console.log('hello, world');
+
+// let email = 'monaakbarpour1@gmail.com';
+// console.log(email)
+
+// // strings concatication
+// let firstName = 'Brandon';
+// let lastName = 'Sanderson';
+
+// let fullName = firstName +' '+ lastName;
+// console.log(fullName);
+
+// // getting characters
+// console.log(fullName[2]);
+
+// // string length
+// console.log(fullName.length);
+
+// // string method
+
+// console.log(fullName.toUpperCase());
+// let result = fullName.toLocaleLowerCase();
+// console.log(result);
+
+// let index = email.indexOf('@');
+// console.log(index);
+
+// __________________________________________
+// common string methods
 
 let email = 'monaakbarpour1@gmail.com';
-console.log(email)
+// let result = email.lastIndexOf('n');
 
-// strings concatication
-let firstName = 'Brandon';
-let lastName = 'Sanderson';
+// let result = email.slice(2,6);
 
-let fullName = firstName +' '+ lastName;
-console.log(fullName);
+// let result = email.substr(6,10);
 
-// getting characters
-console.log(fullName[2]);
+let result = email.replace('o' , 'i')
 
-// string length
-console.log(fullName.length);
-
-// string method
-
-console.log(fullName.toUpperCase());
-let result = fullName.toLocaleLowerCase();
 console.log(result);
-
-let index = email.indexOf('@');
-console.log(index)
