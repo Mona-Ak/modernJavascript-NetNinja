@@ -88,3 +88,48 @@
 // //  likes + ' likes';
 
 // //  console.log(result);
+// ___________________________________
+// template strings
+// const title = 'Best reads of 2019';
+// const author = 'Mario';
+// const likes = 30;
+
+// // concatenation way
+// // let result = 'the blog called' + title + 'by' + author + 'has' + likes + 'likes';
+// // console.log(result);
+
+// // template string way
+// let result = `The blog called ${title} by ${author} has ${likes} likes`;
+// console.log(result);
+
+// // creating html templates
+// let html = `
+//     <h2>${title}</h2>
+//     <p>${author}</p>
+//     <span>this blog has ${likes} likes</span>
+// `;
+// console.log(html);
+
+// _____________________________________________
+let ninjas =['shaun' , 'ryu' , 'chun-li'];
+
+// ninjas[1] = 'ken';
+// console.log(ninjas[1]);
+
+// let ages = [20,25,30,35];
+// console.log(ages[2]);
+
+// let random = ['shaun','crystal',30,20];
+// console.log(random);
+
+// console.log(ninjas.length);
+
+// array methodes
+
+// let result = ninjas.join('-');
+// let result = ninjas.indexOf('chun-li');
+// let result = ninjas.concat(['ken', 'crystal']);
+// let result = ninjas.push('ken');
+// result = ninjas.pop();
+
+// console.log(result);
