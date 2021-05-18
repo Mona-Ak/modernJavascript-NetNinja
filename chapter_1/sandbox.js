@@ -139,3 +139,39 @@
 // let age = null;
 
 // console.log(age , age + 3 , `the age is ${age}`);
+
+// _______________________________________
+// booleans & comparisons
+// console.log(true, false,'true','false');
+
+// methodes can return booleans
+// let email = 'monaakbarpour1@gmail.com';
+// let names = ['mario', 'luigi','toad'];
+
+// let result = email.includes('@');
+// let result = names.includes('luigi');
+
+// console.log(result);
+
+// comparison operators
+// let age = 25;
+
+// console.log(age == 25);
+// console.log(age == 30);
+// console.log(age != 30);
+// console.log(age > 20);
+// console.log(age < 20);
+// console.log(age <= 25);
+// console.log(age >= 25);
+
+// let name = 'mona';
+
+// console.log(name == 'mona');
+// console.log(name == 'Mona');
+// console.log(name > 'crystal');
+// console.log(name > 'Mona');
+// console.log(name > 'Crystal');
+
+// _______________________________________
+
+
