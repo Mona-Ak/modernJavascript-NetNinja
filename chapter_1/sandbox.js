@@ -111,7 +111,7 @@
 // console.log(html);
 
 // _____________________________________________
-let ninjas =['shaun' , 'ryu' , 'chun-li'];
+// let ninjas =['shaun' , 'ryu' , 'chun-li'];
 
 // ninjas[1] = 'ken';
 // console.log(ninjas[1]);
@@ -133,3 +133,9 @@ let ninjas =['shaun' , 'ryu' , 'chun-li'];
 // result = ninjas.pop();
 
 // console.log(result);
+
+// ______________________________________
+// learning undefined and null
+// let age = null;
+
+// console.log(age , age + 3 , `the age is ${age}`);
