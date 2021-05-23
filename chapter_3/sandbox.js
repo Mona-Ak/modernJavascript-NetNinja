@@ -17,7 +17,7 @@ for(let i = 0 ; i < names.length ; i ++){
 
 // while loops
 
-const names = ['shaun', 'mario', 'luigi'];
+// const names = ['shaun', 'mario', 'luigi'];
 // let i = 0;
 
 // while(i < 5){
@@ -25,8 +25,17 @@ const names = ['shaun', 'mario', 'luigi'];
 //     i++
 // };
 
-let i = 0;
-while(i< names.length){
-    console.log(names   [i]);
+// let i = 0;
+// while(i< names.length){
+//     console.log(names   [i]);
+//     i++;
+// };
+// _____________________________________
+// so while loops
+
+let i = 2;
+
+do{
+    console.log('val of i is:' , i);
     i++;
-};
+} while(i < 5)
