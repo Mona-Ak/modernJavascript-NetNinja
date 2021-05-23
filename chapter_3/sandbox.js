@@ -33,9 +33,36 @@ for(let i = 0 ; i < names.length ; i ++){
 // _____________________________________
 // so while loops
 
-let i = 2;
+// let i = 2;
 
-do{
-    console.log('val of i is:' , i);
-    i++;
-} while(i < 5)
+// do{
+//     console.log('val of i is:' , i);
+//     i++;
+// } while(i < 5);
+
+// _______________________________________
+// if statements
+// const age = 25;
+
+// if(age > 20){
+//     console.log('you are over 20 years old');
+// };
+
+// const ninjas = ['shaun' , 'ryu' , 'chun-li' , 'yoshi'];
+
+// if(ninjas.length > 4){
+//     console.log("that's a lot of ninjas");
+// };
+
+// if else statements
+const password = 'password1234';
+
+if(password.length >= 12){
+    console.log('that password is mighty strong');
+}else if(password.length >= 8){
+    console.log('that password is long enough!');
+}else{
+    console.log('pssword is not long enough');
+};
+
+
