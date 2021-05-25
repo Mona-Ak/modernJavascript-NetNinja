@@ -113,26 +113,47 @@ for(let i = 0 ; i < names.length ; i ++){
 
 // _______________________________________________
 // switch statements
-const grade = '50';
+// const grade = '50';
 
-switch (grade)  {
-    case "50":
-        console.log("you got an A!");
-        break;
-    case "B":
-        console.log("you got an B!");
-        break;
-    case "C":
-        console.log("you got an C!");
-        break;
-    case "D":
-        console.log("you got an D!");
-        break;
-    case "E":
-        console.log("you got an E!");
-        break;
-    default:
-        console.log('not a valid grade');
+// switch (grade)  {
+//     case "50":
+//         console.log("you got an A!");
+//         break;
+//     case "B":
+//         console.log("you got an B!");
+//         break;
+//     case "C":
+//         console.log("you got an C!");
+//         break;
+//     case "D":
+//         console.log("you got an D!");
+//         break;
+//     case "E":
+//         console.log("you got an E!");
+//         break;
+//     default:
+//         console.log('not a valid grade');
+// }
+
+// ____________________________________________
+// variables & block scope
+const age = 30;
+
+// *we are allow to do redefine the variable inside a code block even though it's got the same name
+
+// *var does not have block scope
+if(true){
+    const age = 40;
+    const name = 'mona'
+    console.log('inside 1st code block:' , age ,name);
+
+    if(true){
+        const age = 50;
+        console.log('inside 2nd code block:',age)
+    }
+
 }
+
+console.log('outside code block:' , age ,name );
 
 
