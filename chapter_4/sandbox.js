@@ -42,26 +42,56 @@
 // console.log(area);
 
 // ______________________________________________
-// regular function
-// const calcArea = function(radius){
-//     return 3.14 * radius**2;
+// // regular function
+// // const calcArea = function(radius){
+// //     return 3.14 * radius**2;
+// // };
+
+
+
+// // arrow function
+
+
+// // const calcArea = (radius) => {
+// //     return 3.14 * radius**2;
+// // };
+
+// // * when we have one parameter we can take away the parentheses
+
+// // if we have just one single return we can remove the return and qurly braces even if don't  write the return it will reurns the value
+
+// const calcArea = radius => 3.14 * radius**2;
+
+
+// const area = calcArea(5);
+// console.log('area is :',area);
+
+// practice arrow functions
+
+// const greet = function(){
+//     return ' hello, world';
 // };
 
+const greet = () => 'hello, world';
+greet();
+const result = greet();
+console.log(result);
 
+// const bill = function(products , tax){
+//     let total = 0;
+//     for(let i = 0; i < products.length ; i++){
+//         total += products[i] + products[i] *tax;
+//     }
+//     return total;
+// }
 
-// arrow function
+const bill = (products, tax) => {
+    let total = 0; 
+    for(let i = 0; i < products.length ; i++){
+        total += products[i] + products[i] *tax;
+    }
+    return total;
+}
 
+console.log(bill([10,15,30] , 0.2));
 
-// const calcArea = (radius) => {
-//     return 3.14 * radius**2;
-// };
-
-// * when we have one parameter we can take away the parentheses
-
-// if we have just one single return we can remove the return and qurly braces even if don't  write the return it will reurns the value
-
-const calcArea = radius => 3.14 * radius**2;
-
-
-const area = calcArea(5);
-console.log('area is :',area);
