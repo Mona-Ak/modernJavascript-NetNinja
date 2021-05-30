@@ -96,20 +96,43 @@
 // console.log(bill([10,15,30] , 0.2));
 
 // ____________________________________________
-const name = 'mona';
+// const name = 'mona';
 
-// functions
+// // functions
 
-const greet = () => 'hello';
+// const greet = () => 'hello';
 
-let resultOne = greet();
-console.log(resultOne);
+// let resultOne = greet();
+// console.log(resultOne);
 
-// methods
+// // methods
 
-let resultTwo = name.toUpperCase();
-console.log(resultTwo);
+// let resultTwo = name.toUpperCase();
+// console.log(resultTwo);
 
-// *methods are functions which associated with an object pr datatype
+// // *methods are functions which associated with an object pr datatype
 
-// *the difference is how to call them
+// // *the difference is how to call theme
+
+// ___________________________________________
+// callbacks & foreach
+
+// *when we pass in a function as an argument it is a callbackfunction
+
+const myFunc = (callbackFunc) => {
+    // do something
+    let value = 50;
+    callbackFunc(value);
+};
+
+myFunc(value =>{
+    // do something
+    console.log(value);
+});
+
+
+
+
+// let people = ['mario', 'luigi','ryu','shaun','chun-li'];
+
+
