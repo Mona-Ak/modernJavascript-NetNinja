@@ -140,5 +140,19 @@
 // people.forEach(logPerson);
 
 // _______________________________________________
+// get a reference to the 'ul'
+// ***be carefull your script tag in html be in body tag otherwise it doesn't work 
 
+const ul = document.querySelector('.people');
 
+const people = ['mario', 'luigi','ryu','shaun','chun-li'];
+
+let html = ``;
+
+people.forEach((person) =>{
+    // create html template
+    html += `<li style="color:purple">${person}</li>`;
+});
+
+console.log(html);
+ul.innerHTML = html;
