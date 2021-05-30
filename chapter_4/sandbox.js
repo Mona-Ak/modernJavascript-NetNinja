@@ -16,11 +16,29 @@
 //     console.log('hello there');
 // }
 // ________________________________________________
-// arguments & parameters
+// // arguments & parameters
 
-const speak = function(name = 'luigi', time = 'night'){
-    console.log(`good ${time} ${name}`);
+// const speak = function(name = 'luigi', time = 'night'){
+//     console.log(`good ${time} ${name}`);
+// };
+
+// speak();
+// speak('mona' , 'morning');
+
+// ______________________________________________
+// returning values
+
+// const speak = function(name = 'luigi', time = 'night'){
+//     console.log(`good ${time} ${name}`);
+// };
+
+// *the benefit of return is that we can thake a value and do something with it
+const calcArea = function(radius){
+    return 3.14 * radius**2;
+
 };
 
-speak();
-speak('mona' , 'morning');
+const area = calcArea(5);
+console.log(area);
+
+
