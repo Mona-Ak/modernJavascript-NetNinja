@@ -26,19 +26,42 @@
 // speak('mona' , 'morning');
 
 // ______________________________________________
-// returning values
+// // returning values
 
-// const speak = function(name = 'luigi', time = 'night'){
-//     console.log(`good ${time} ${name}`);
+// // const speak = function(name = 'luigi', time = 'night'){
+// //     console.log(`good ${time} ${name}`);
+// // };
+
+// // *the benefit of return is that we can thake a value and do something with it
+// const calcArea = function(radius){
+//     return 3.14 * radius**2;
+
 // };
 
-// *the benefit of return is that we can thake a value and do something with it
-const calcArea = function(radius){
-    return 3.14 * radius**2;
+// const area = calcArea(5);
+// console.log(area);
 
-};
+// ______________________________________________
+// regular function
+// const calcArea = function(radius){
+//     return 3.14 * radius**2;
+// };
+
+
+
+// arrow function
+
+
+// const calcArea = (radius) => {
+//     return 3.14 * radius**2;
+// };
+
+// * when we have one parameter we can take away the parentheses
+
+// if we have just one single return we can remove the return and qurly braces even if don't  write the return it will reurns the value
+
+const calcArea = radius => 3.14 * radius**2;
+
 
 const area = calcArea(5);
-console.log(area);
-
-
+console.log('area is :',area);
