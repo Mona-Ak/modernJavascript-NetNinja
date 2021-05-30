@@ -137,23 +137,25 @@ for(let i = 0 ; i < names.length ; i ++){
 
 // ____________________________________________
 // variables & block scope
-const age = 30;
+// const age = 30;
 
-// *we are allow to do redefine the variable inside a code block even though it's got the same name
+// // *we are allow to do redefine the variable inside a code block even though it's got the same name
 
-// *var does not have block scope
-if(true){
-    const age = 40;
-    const name = 'mona'
-    console.log('inside 1st code block:' , age ,name);
+// // *var does not have block scope
+// if(true){
+//     const age = 40;
+//     const name = 'mona'
+//     console.log('inside 1st code block:' , age ,name);
 
-    if(true){
-        const age = 50;
-        console.log('inside 2nd code block:',age)
-    }
+//     if(true){
+//         const age = 50;
+//         console.log('inside 2nd code block:',age)
+//     }
 
-}
+// }
 
-console.log('outside code block:' , age ,name );
+// console.log('outside code block:' , age ,name );
+// ________________________________________________
+
 
 
