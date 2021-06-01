@@ -55,23 +55,46 @@
 // // console.log(this);
 
 // ________________________________________________
-// Math object
+// // Math object
 
-console.log(Math);
-console.log(Math.PI);
-console.log(Math.E);
+// console.log(Math);
+// console.log(Math.PI);
+// console.log(Math.E);
 
-const area = 5.3;
+// const area = 5.3;
 
-console.log(Math.round(area));
-console.log(Math.floor(area));
-console.log(Math.ceil(area));
-console.log(Math.trunc(area));
+// console.log(Math.round(area));
+// console.log(Math.floor(area));
+// console.log(Math.ceil(area));
+// console.log(Math.trunc(area));
 
-// random nembers
+// // random nembers
 
-const random = Math.random();
+// const random = Math.random();
 
-console.log(random);
-// the best way to take random number between 1-100
-console.log(Math.round(random * 100));
+// console.log(random);
+// // the best way to take random number between 1-100
+// console.log(Math.round(random * 100));
+// ______________________________________________
+// primitive values
+
+// let scoreOne = 50;
+// let scoreTwo = scoreOne;
+
+// console.log(`scoreOne: ${scoreOne}` , `scoreTwo: ${scoreTwo}`);
+
+// scoreOne = 100;
+// // *it doesn't affect the scoreTwo
+// console.log(`scoreOne: ${scoreOne}` , `scoreTwo: ${scoreTwo}`);
+
+
+// reference values
+
+// *when you change one of the property it changes in both not just one
+const userOne = { name : 'mona' , age:20};
+const userTwo = userOne;
+
+console.log(userOne,userTwo);
+
+userOne.name= 'chun-li';
+console.log(userOne,userTwo);
