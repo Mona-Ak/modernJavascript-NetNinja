@@ -13,25 +13,33 @@ let user = {
         console.log('the user logged out');
     },
     logBlogs:function(){
-        
+        // console.log(this.blogs);
+        console.log('this user has written the following blogs :');
+        this.blogs.forEach(blog => {
+            console.log(blog);
+        });
     }
 };
 
-// console.log(user);
-// console.log(user.name);
+// // console.log(user);
+// // console.log(user.name);
 
-// // user.age = 35;
-// console.log(user.age);
+// // // user.age = 35;
+// // console.log(user.age);
 
-// // the other way to acces to the name in object
-// console.log(user['name']);
-// user['name'] = 'chun-li';
-// console.log(user.name);
+// // // the other way to acces to the name in object
+// // console.log(user['name']);
+// // user['name'] = 'chun-li';
+// // console.log(user.name);
 
-// console.log(typeof user);
+// // console.log(typeof user);
 
-user.login();
-user.logout();
+// user.login();
+// user.logout();
 
-const name = 'mario';
-name.toUpperCase();
+// const name = 'mario';
+// name.toUpperCase();
+
+user.logBlogs();
+
+console.log(this);
