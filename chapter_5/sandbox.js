@@ -91,10 +91,10 @@
 // reference values
 
 // *when you change one of the property it changes in both not just one
-const userOne = { name : 'mona' , age:20};
-const userTwo = userOne;
+// const userOne = { name : 'mona' , age:20};
+// const userTwo = userOne;
 
-console.log(userOne,userTwo);
+// console.log(userOne,userTwo);
 
-userOne.name= 'chun-li';
-console.log(userOne,userTwo);
+// userOne.name= 'chun-lig ';
+// console.log(userOne,userTwo);
