@@ -83,13 +83,35 @@
 // title.style.margin = '' ;
 
 // ________________________________________________
-// adding and changing classes
-const content = document.querySelector('p');
+// // adding and changing classes
+// const content = document.querySelector('p');
 
-console.log(content.classList);
-content.classList.add('error');
-content.classList.remove('error');
-content.classList.add('success');
+// console.log(content.classList);
+// content.classList.add('error');
+// content.classList.remove('error');
+// content.classList.add('success');
+
+// challenge
+
+const paras = document.querySelectorAll('p');
+
+console.log(paras);
+paras.forEach(p => {
+    if(p.textContent.includes('error')){
+        p.classList.add('error');
+    }else if(p.textContent.includes('success')){
+        p.classList.add('success');
+    }
+});
+
+const title = document.querySelector('.title');
+
+// the first toggle adds the value to class 
+// the second toggle removes the value
+title.classList.toggle('test');
+title.classList.toggle('test');
+
+
 
 
 
