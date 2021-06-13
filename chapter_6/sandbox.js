@@ -66,21 +66,30 @@
 // mssg.setAttribute('style' , 'color:green;');
 
 // _______________________________________________
-const title = document.querySelector('h1');
+// const title = document.querySelector('h1');
 
-// this way you overright the attribute
-// title.setAttribute('style' , 'margin:50px;');
+// // this way you overright the attribute
+// // title.setAttribute('style' , 'margin:50px;');
 
-console.log(title.style);
-console.log(title.style.color);
+// console.log(title.style);
+// console.log(title.style.color);
 
-// this way you can add new attribute 
-title.style.margin = '50px';
-title.style.color = 'crimson';
-title.style.fontSize = '60px';
+// // this way you can add new attribute 
+// title.style.margin = '50px';
+// title.style.color = 'crimson';
+// title.style.fontSize = '60px';
 
-// this is for removing margin
-title.style.margin = '' ;
+// // this is for removing margin
+// title.style.margin = '' ;
+
+// ________________________________________________
+// adding and changing classes
+const content = document.querySelector('p');
+
+console.log(content.classList);
+content.classList.add('error');
+content.classList.remove('error');
+content.classList.add('success');
 
 
 
