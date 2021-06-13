@@ -52,18 +52,35 @@
 // // ineerHTML ===> changes the content an element
 
 // ______________________________________________
-const link = document.querySelector('a');
+// const link = document.querySelector('a');
 
-console.log(link.getAttribute('href'));
-link.setAttribute('href', 'https://www.thenetninja.co.uk');
+// console.log(link.getAttribute('href'));
+// link.setAttribute('href', 'https://www.thenetninja.co.uk');
 
-link.innerText = 'TheNet Ninja Website';
+// link.innerText = 'TheNet Ninja Website';
 
-const mssg = document.querySelector('p');
+// const mssg = document.querySelector('p');
 
-console.log(mssg.getAttribute('class'));
-mssg.setAttribute('class','success');
-mssg.setAttribute('style' , 'color:green;');
+// console.log(mssg.getAttribute('class'));
+// mssg.setAttribute('class','success');
+// mssg.setAttribute('style' , 'color:green;');
+
+// _______________________________________________
+const title = document.querySelector('h1');
+
+// this way you overright the attribute
+// title.setAttribute('style' , 'margin:50px;');
+
+console.log(title.style);
+console.log(title.style.color);
+
+// this way you can add new attribute 
+title.style.margin = '50px';
+title.style.color = 'crimson';
+title.style.fontSize = '60px';
+
+// this is for removing margin
+title.style.margin = '' ;
 
 
 
