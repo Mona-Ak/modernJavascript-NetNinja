@@ -91,27 +91,46 @@
 // content.classList.remove('error');
 // content.classList.add('success');
 
-// challenge
+// // challenge
 
-const paras = document.querySelectorAll('p');
+// const paras = document.querySelectorAll('p');
 
-console.log(paras);
-paras.forEach(p => {
-    if(p.textContent.includes('error')){
-        p.classList.add('error');
-    }else if(p.textContent.includes('success')){
-        p.classList.add('success');
-    }
-});
+// console.log(paras);
+// paras.forEach(p => {
+//     if(p.textContent.includes('error')){
+//         p.classList.add('error');
+//     }else if(p.textContent.includes('success')){
+//         p.classList.add('success');
+//     }
+// });
 
-const title = document.querySelector('.title');
+// const title = document.querySelector('.title');
 
-// the first toggle adds the value to class 
-// the second toggle removes the value
-title.classList.toggle('test');
-title.classList.toggle('test');
+// // the first toggle adds the value to class 
+// // the second toggle removes the value
+// title.classList.toggle('test');
+// title.classList.toggle('test');
 
+// ________________________________________________
+// parents children and siblings
 
+const article =document.querySelector('article');
+// console.log(article.children);
+// console.log(Array.from(article.children));
+// we can not apply any method on htmlcollection that is why we convert it 
+// Array.from(article.children).forEach(child => {
+//     child.classList.add('article-element');
+// });
+
+const title = document.querySelector('h2');
+
+console.log(title.parentElement);
+console.log(title.parentElement.parentElement);
+console.log(title.nextElementSibling);
+console.log(title.previousElementSibling);
+
+// chaining
+console.log(title.nextElementSibling.parentElement.children);
 
 
 
