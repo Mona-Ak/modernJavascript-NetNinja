@@ -168,12 +168,21 @@ button.addEventListener('click' , e =>{
     ul.prepend(li);
 });
 
+// const items = document.querySelectorAll('li');
 
-const items = document.querySelectorAll('li');
+// items.forEach(item =>{
+//     item.addEventListener('click' , e =>{
+//         // e.target.style.textDecoration = 'line-through';
+//         console.log('event in LI');  
+//         e.stopPropagation();
+//         e.target.remove();
+//     })
+// });
 
-items.forEach(item =>{
-    item.addEventListener('click' , e =>{
-        // e.target.style.textDecoration = 'line-through';
+ul.addEventListener('click', e => {
+    // console.log('event in UL');
+    // console.log(e.target);
+    if(e.target.tagName === 'LI'){
         e.target.remove();
-    })
-})
+    }
+});
