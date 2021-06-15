@@ -112,25 +112,42 @@
 // title.classList.toggle('test');
 
 // ________________________________________________
-// parents children and siblings
+// // parents children and siblings
 
-const article =document.querySelector('article');
-// console.log(article.children);
-// console.log(Array.from(article.children));
-// we can not apply any method on htmlcollection that is why we convert it 
-// Array.from(article.children).forEach(child => {
-//     child.classList.add('article-element');
+// const article =document.querySelector('article');
+// // console.log(article.children);
+// // console.log(Array.from(article.children));
+// // we can not apply any method on htmlcollection that is why we convert it 
+// // Array.from(article.children).forEach(child => {
+// //     child.classList.add('article-element');
+// // });
+
+// const title = document.querySelector('h2');
+
+// console.log(title.parentElement);
+// console.log(title.parentElement.parentElement);
+// console.log(title.nextElementSibling);
+// console.log(title.previousElementSibling);
+
+// // chaining
+// console.log(title.nextElementSibling.parentElement.children);
+
+// ___________________________________________________
+// Event basic
+
+// const button = document.querySelector('button');
+
+// button.addEventListener('click' , ()=>{
+//     console.log('you cklicked me');
 // });
 
-const title = document.querySelector('h2');
+const items = document.querySelectorAll('li');
 
-console.log(title.parentElement);
-console.log(title.parentElement.parentElement);
-console.log(title.nextElementSibling);
-console.log(title.previousElementSibling);
-
-// chaining
-console.log(title.nextElementSibling.parentElement.children);
-
-
-
+items.forEach(item=>{
+    item.addEventListener('click',e =>{
+        // console.log('item clicked');
+        // console.log(e.target);
+        // console.log(item);
+        e.target.style.textDecoration = 'line-through'
+    });
+});
