@@ -133,21 +133,47 @@
 // console.log(title.nextElementSibling.parentElement.children);
 
 // ___________________________________________________
-// Event basic
+// // Event basic
 
-// const button = document.querySelector('button');
+// // const button = document.querySelector('button');
 
-// button.addEventListener('click' , ()=>{
-//     console.log('you cklicked me');
+// // button.addEventListener('click' , ()=>{
+// //     console.log('you cklicked me');
+// // });
+
+// const items = document.querySelectorAll('li');
+
+// items.forEach(item=>{
+//     item.addEventListener('click',e =>{
+//         // console.log('item clicked');
+//         // console.log(e.target);
+//         // console.log(item);
+//         e.target.style.textDecoration = 'line-through'
+//     });
 // });
+
+// ______________________________________________________
+// creating and removing elements
+const ul = document.querySelector('ul');
+// ul.remove();
+
+const button = document.querySelector('button');
+
+button.addEventListener('click' , e =>{
+    const li = document.createElement('li');
+    li.textContent = 'something new to do';
+
+    // append adds content after prepend adds conten before
+    // ul.append(li);
+    ul.prepend(li);
+});
+
 
 const items = document.querySelectorAll('li');
 
-items.forEach(item=>{
-    item.addEventListener('click',e =>{
-        // console.log('item clicked');
-        // console.log(e.target);
-        // console.log(item);
-        e.target.style.textDecoration = 'line-through'
-    });
-});
+items.forEach(item =>{
+    item.addEventListener('click' , e =>{
+        // e.target.style.textDecoration = 'line-through';
+        e.target.remove();
+    })
+})
