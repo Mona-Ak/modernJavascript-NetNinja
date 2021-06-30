@@ -1,5 +1,6 @@
 const form = document.querySelector('.signup-form');
 const feedback = document.querySelector('.feedback');
+const usernamePattern = /^[a-zA-Z]{6,12}$/;
 // preventDefault is used to for the page to not refreshing
 // const username = document.querySelector('#username');
 
@@ -8,7 +9,7 @@ form.addEventListener('submit', e=>{
 
     // validation
     const username = form.username.value;
-    const usernamePattern = /^[a-zA-Z]{6,12}$/;
+    
 
     if(usernamePattern.test(username)){
         // feedback good info
@@ -24,6 +25,17 @@ form.addEventListener('submit', e=>{
     // we can use the down method to access the value of input inside form without defining it in value
     // console.log(form.username.value);
 });
+
+// live feedback
+form.username.addEventListener('keyup', e =>{
+    
+    // console.log(e.target.value , form.username.value); 
+    if(usernamePattern.test(e.target.value)){
+        form.username.setAttribute('class', 'success');
+    }else{
+        form.username.setAttribute('class' , 'error');
+    }
+})
 
 
 
