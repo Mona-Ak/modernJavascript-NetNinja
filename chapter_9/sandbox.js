@@ -88,7 +88,51 @@
 
 // _____________________________________________________________
 // find method
-const scores = [10,5,0,40,60,10,20,70];
+// const scores = [10,5,0,40,60,10,20,70];
 
-const firstHighScore = scores.find(score => score > 50);
-console.log(firstHighScore);
+// const firstHighScore = scores.find(score => score > 50);
+// console.log(firstHighScore);
+
+// ______________________________________________________________
+// example 1 - sorting strings
+const names = ['mario', 'shaun' , 'chun-li' , 'yoshi' , 'luigi'];
+
+// names.sort();
+// names.reverse();
+// console.log(names);
+
+
+
+// example 2 - sorting numbers
+const scores = [10,50,20,5,35,70,45];
+
+// scores.sort();
+// scores.reverse();
+// console.log(scores);
+
+// a short way to sorting if you want to reverse it use reverse method or a - b
+scores.sort((a,b) => b - a);
+console.log(scores);
+
+// example 3 - sorting objects
+const players = [
+    {player:'mario' , score :20},
+     {player:'luigi' , score :10},
+     {player:'chun-li' , score :50},
+     {player:'yoshi' , score :30},
+     {player:'shaun' , score :70},
+];
+
+// players.sort((a,b) => {
+//     if(a.score > b.score){
+//         return -1;
+//     }else if(b.score > a.score){
+//         return 1;
+//     }else{
+//         return 0;
+//     };
+// });
+
+// the short way of sorting
+players.sort((a,b)=> b.score - a.score);
+console.log(players)
