@@ -94,45 +94,70 @@
 // console.log(firstHighScore);
 
 // ______________________________________________________________
-// example 1 - sorting strings
-const names = ['mario', 'shaun' , 'chun-li' , 'yoshi' , 'luigi'];
+// // example 1 - sorting strings
+// const names = ['mario', 'shaun' , 'chun-li' , 'yoshi' , 'luigi'];
 
-// names.sort();
-// names.reverse();
-// console.log(names);
+// // names.sort();
+// // names.reverse();
+// // console.log(names);
 
 
 
-// example 2 - sorting numbers
-const scores = [10,50,20,5,35,70,45];
+// // example 2 - sorting numbers
+// const scores = [10,50,20,5,35,70,45];
 
-// scores.sort();
-// scores.reverse();
+// // scores.sort();
+// // scores.reverse();
+// // console.log(scores);
+
+// // a short way to sorting if you want to reverse it use reverse method or a - b
+// scores.sort((a,b) => b - a);
 // console.log(scores);
 
-// a short way to sorting if you want to reverse it use reverse method or a - b
-scores.sort((a,b) => b - a);
-console.log(scores);
+// // example 3 - sorting objects
+// const players = [
+//     {player:'mario' , score :20},
+//      {player:'luigi' , score :10},
+//      {player:'chun-li' , score :50},
+//      {player:'yoshi' , score :30},
+//      {player:'shaun' , score :70},
+// ];
 
-// example 3 - sorting objects
-const players = [
-    {player:'mario' , score :20},
-     {player:'luigi' , score :10},
-     {player:'chun-li' , score :50},
-     {player:'yoshi' , score :30},
-     {player:'shaun' , score :70},
+// // players.sort((a,b) => {
+// //     if(a.score > b.score){
+// //         return -1;
+// //     }else if(b.score > a.score){
+// //         return 1;
+// //     }else{
+// //         return 0;
+// //     };
+// // });
+
+// // the short way of sorting
+// players.sort((a,b)=> b.score - a.score);
+// console.log(players);
+
+// __________________________________________________________
+// chaining array
+const products = [
+    {name: 'gold star' , price:30},
+    {name: 'green shell' , price:10},
+    {name: 'red shell' , price:40},
+    {name: 'banana skin' , price:5},
+    {name: 'mushroom' , price:50}
 ];
 
-// players.sort((a,b) => {
-//     if(a.score > b.score){
-//         return -1;
-//     }else if(b.score > a.score){
-//         return 1;
-//     }else{
-//         return 0;
-//     };
+// const filtered = products.filter(product => product.price > 20);
+
+// const promos = filtered.map(product => {
+//     return ` the ${product.name} is ${product.price / 2} pounds`;
 // });
 
-// the short way of sorting
-players.sort((a,b)=> b.score - a.score);
-console.log(players)
+const promos = products
+.filter(product => product.price > 20)
+.map(product => {
+    return ` the ${product.name} is ${product.price / 2} pounds`; 
+})
+
+console.log(promos);
+
