@@ -47,26 +47,44 @@
 // const timestamp = 1675938474990;
 // console.log(new Date(timestamp));
 // ___________________________________________
-const clock = document.querySelector('.clock');
+// const clock = document.querySelector('.clock');
 
-const tick = () => {
+// const tick = () => {
 
-    const now = new Date();
+//     const now = new Date();
 
-    const h = now.getHours();
-    const m = now.getMinutes();
-    const s = now.getSeconds();
+//     const h = now.getHours();
+//     const m = now.getMinutes();
+//     const s = now.getSeconds();
 
-    const html = `
-        <span>${h}</span> :
-        <span>${m}</span> :
-        <span>${s}</span>
-    `;
+//     const html = `
+//         <span>${h}</span> :
+//         <span>${m}</span> :
+//         <span>${s}</span>
+//     `;
 
-    clock.innerHTML = html;
+//     clock.innerHTML = html;
 
-};
+// };
 
-// calling function every second
-setInterval(tick, 1000);
+// // calling function every second
+// setInterval(tick, 1000);
+// ________________________________________
 
+// if you want this part work comment out the <script src="http://cdn.date-fns.org/v1.9.0/date_fns.min.js"></script> in html
+const now = new Date();
+
+// console.log(dateFns.isToday(now));
+
+// formatting options
+console.log(dateFns.format(now , 'YYYY'));
+console.log(dateFns.format(now , 'MMMM'));
+console.log(dateFns.format(now , 'dddd'));
+console.log(dateFns.format(now , 'Do'));
+console.log(dateFns.format(now , 'dddd Do MMMM YYYY'));
+
+// comparing dates
+const before = new Date('februray 1 2019 12:00:00');
+
+// addSuffix adds 'ago' to the end of the time in console
+console.log(dateFns.distanceInWords(now , before,{addSuffix:true}));
