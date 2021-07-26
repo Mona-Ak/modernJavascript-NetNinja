@@ -72,19 +72,20 @@
 // ________________________________________
 
 // if you want this part work comment out the <script src="http://cdn.date-fns.org/v1.9.0/date_fns.min.js"></script> in html
-const now = new Date();
 
-// console.log(dateFns.isToday(now));
+// const now = new Date();
 
-// formatting options
-console.log(dateFns.format(now , 'YYYY'));
-console.log(dateFns.format(now , 'MMMM'));
-console.log(dateFns.format(now , 'dddd'));
-console.log(dateFns.format(now , 'Do'));
-console.log(dateFns.format(now , 'dddd Do MMMM YYYY'));
+// // console.log(dateFns.isToday(now));
 
-// comparing dates
-const before = new Date('februray 1 2019 12:00:00');
+// // formatting options
+// console.log(dateFns.format(now , 'YYYY'));
+// console.log(dateFns.format(now , 'MMMM'));
+// console.log(dateFns.format(now , 'dddd'));
+// console.log(dateFns.format(now , 'Do'));
+// console.log(dateFns.format(now , 'dddd Do MMMM YYYY'));
 
-// addSuffix adds 'ago' to the end of the time in console
-console.log(dateFns.distanceInWords(now , before,{addSuffix:true}));
+// // comparing dates
+// const before = new Date('februray 1 2019 12:00:00');
+
+// // addSuffix adds 'ago' to the end of the time in console
+// console.log(dateFns.distanceInWords(now , before,{addSuffix:true}));
