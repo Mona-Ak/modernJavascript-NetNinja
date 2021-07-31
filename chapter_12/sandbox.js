@@ -80,16 +80,33 @@
 //   });
 
 // _________________________________________________________
-// fetch api
+// async & await
 
-// it is also promise 
-fetch('todos/luigi.json').then(response => {
-  console.log('resolved' , response);
-  // return response.json(); returns the promise
-  return response.json();
-}).then(data =>{
-  // here we can get the real data after returning the response
-  console.log(data);
-}).catch(err =>{
-  console.log('rejected' , err);
-});
+// ********{"async and await make promises easier to write"}*******
+// ********{async makes a function return a Promise}********
+// ********{await makes a function wait for a Promise}*******
+
+const getTodos = async ()=>{
+
+  const response = await fetch('todos/luigi.json');
+  const data = await response.json();
+  return data;
+
+};
+
+getTodos()
+  .then(data => console.log('resolved',data));
+
+
+// // fetch api
+// // it is also promise 
+// fetch('todos/luigi.json').then(response => {
+//   console.log('resolved' , response);
+//   // return response.json(); returns the promise
+//   return response.json();
+// }).then(data =>{
+//   // here we can get the real data after returning the response
+//   console.log(data);
+// }).catch(err =>{
+//   console.log('rejected' , err);
+// });
