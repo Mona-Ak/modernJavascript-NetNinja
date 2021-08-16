@@ -89,15 +89,22 @@
 const getTodos = async ()=>{
 
   const response = await fetch('todos/luigi.json');
+
+  // this if statement is for fetch error
+  // The throw statement allows you to create a custom error.
+  if(response.status !== 200){
+    throw new Error('can not fetch the data');
+  }
+
   const data = await response.json();
   return data;
 
 };
 
+// err.message tells us where is the error in json file
 getTodos()
-.then(data =>{
-  console.log('resolved :',data)
-})
+.then(data =>console.log('resolved :',data))
+.catch(err => console.log('rejected :', err.message));
 
 
 // // fetch api
