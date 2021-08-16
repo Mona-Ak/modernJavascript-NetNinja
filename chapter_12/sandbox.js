@@ -95,7 +95,9 @@ const getTodos = async ()=>{
 };
 
 getTodos()
-  .then(data => console.log('resolved',data));
+.then(data =>{
+  console.log('resolved :',data)
+})
 
 
 // // fetch api
